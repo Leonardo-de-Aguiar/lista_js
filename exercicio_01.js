@@ -1,3 +1,4 @@
+ /*
  console.log("Olá, Mundo!");
 
  let nome = "Leonardo";
@@ -6,7 +7,7 @@
  let sabe = true;
 
  console.log("Meu nome é:" + nome);
-
+ */
  function somarNumeros(){
     let soma = 0;
     let continuar = true;
@@ -22,4 +23,4 @@
     alert("A soma dos números é: " + soma);
  }
 
- somarNumeros();
+ // somarNumeros();
