@@ -1,6 +1,6 @@
 
 
-function balancofinanceiro() {
+function balancoFinanceiro() {
 
     let ganho = 0
     let gasto = 0
@@ -29,4 +29,3 @@ function balancofinanceiro() {
     }
 };
 
-balancofinanceiro()

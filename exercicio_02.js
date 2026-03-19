@@ -7,4 +7,3 @@ function contagemRegressiva(){
     alert("Lançamento realizado!");
 };
 
-// contagemRegressiva()
