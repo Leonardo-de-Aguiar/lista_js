@@ -1,30 +1,32 @@
 
 
-function(balancofinanceiro);
+function balancofinanceiro() {
 
-let ganho = []
-let gasto = []
-let ganhoSoma = 0
-let gastoSoma = 0
-let total
+    let ganho = 0
+    let gasto = 0
+    let ganhoSoma = 0
+    let gastoSoma = 0
+    let total
 
-for(let i; i < 12; i++){
+    for (let i = 1; i < 12; i++) {
 
-    ganho[i] = Number(prompt("Insira o ganho do mês ") + (i+1));
-    gasto[i] = Number(prompt("Insira o gasto do mês ") + (i+1));
+        ganho = Number(prompt("Insira o ganho do mês " + i));
+        gasto = Number(prompt("Insira o gasto do mês " + i));
 
-    ganhoSoma += ganho[i];
-    gastoSoma += gasto[i];
 
-}
+        ganhoSoma += ganho;
+        gastoSoma += gasto;
+
+    }
 
     total = ganhoSoma - gastoSoma;
 
-
-if(total > 0){
-    alert("Você teve lucro!");
-}else{
-    alert("Você teve prejuízo!");
-}
+    alert("Seu saldo é:" + total);
+    if (total > 0) {
+        alert("Você teve lucro!");
+    } else {
+        alert("Você teve prejuízo!");
+    }
+};
 
 balancofinanceiro()
